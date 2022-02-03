@@ -18,7 +18,33 @@ import {
 } from "../../styles/Footer.styles";
 import { LargeContainer, Background } from "../../styles/Global.styles";
 
-const socialMediaLinks = {
+
+interface ISocialMediaLink {
+  id: string,
+  path: string,
+  icon: JSX.Element
+}
+interface IsocialMediaLinksParams {
+  mobile: Array<ISocialMediaLink>
+  desktop: Array<ISocialMediaLink>
+}
+
+
+interface ICommonLinkParams {
+  id: string,
+  path: string,
+  label: string,
+  showMobile: boolean,
+  showDesktop: boolean
+
+}
+
+interface ICommonsLinskParams {
+  aboutLinks: Array<ICommonLinkParams>
+  policyLinks: Array<ICommonLinkParams>
+}
+
+const socialMediaLinks: IsocialMediaLinksParams = {
   mobile: [
     {
       id: "1",
@@ -55,7 +81,8 @@ const socialMediaLinks = {
   ],
 };
 
-const commonLinks = {
+
+const commonLinks: ICommonsLinskParams = {
   aboutLinks: [
     {
       id: "1",
@@ -138,6 +165,7 @@ const commonLinks = {
     },
   ],
 };
+
 
 const Footer = () => {
   return (

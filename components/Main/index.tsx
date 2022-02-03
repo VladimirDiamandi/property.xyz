@@ -3,7 +3,11 @@ import { StyledMain } from "../../styles/Main.styles";
 import { Container, Background } from "../../styles/Global.styles";
 
 
-const Main = ({ children }: any) => {
+interface IMainProps {
+  children: React.ReactNode
+}
+
+const Main = ({ children }: IMainProps) => {
   return (
     <Background color="#f3f4fa">
       <Container>

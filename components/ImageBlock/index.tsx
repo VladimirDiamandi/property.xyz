@@ -5,7 +5,7 @@ import tobuy from '../../assets/tobuy.jpg'
 import mortgages from '../../assets/mortgages.jpg'
 import ImgWithText from '../ImgWithText';
 
-const image = [
+const image: Array<IImageItem> = [
     {
         id: 1,
         path: tosell,
@@ -28,6 +28,14 @@ const image = [
         btnText: 'Sell Property'
     }
 ]
+
+interface IImageItem {
+    id: number,
+    title: string,
+    text: string,
+    btnText: string,
+    path: string | StaticImageData
+}
 
 
 

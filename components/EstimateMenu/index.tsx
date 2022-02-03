@@ -6,7 +6,7 @@ const activeItemStyle = {
     fontWeight: 'bold'
 }
 
-const estimateOptions = [
+const estimateOptions: Array<IestimateOptionsParams> = [
     {
         id: 1,
         name: 'Property Estimate',
@@ -16,6 +16,12 @@ const estimateOptions = [
         name: 'Rental Estimate'
     },
 ]
+
+
+interface IestimateOptionsParams {
+    id: number,
+    name: string
+}
 
 interface IEstimateMenuProps {
     index: number,

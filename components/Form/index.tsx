@@ -6,7 +6,7 @@ import CustomSelect, { IOptions } from "../CustomSelect";
 import { MainBtn, StyledForm } from "../../styles/Form.styles";
 import { useRouter } from "next/router";
 
-const typeOptions = [
+const typeOptions: Array<IOptionsParams> = [
   {
     id: 1,
     label: "Flat",
@@ -29,7 +29,7 @@ const typeOptions = [
   },
 ];
 
-const badsOptions = [
+const badsOptions: Array<IOptionsParams> = [
   {
     id: 1,
     label: "1",
@@ -46,6 +46,13 @@ const badsOptions = [
     value: "3",
   },
 ];
+
+
+interface IOptionsParams {
+  id: number,
+  label: string,
+  value: string
+}
 
 interface IFormProps {
   btnName: 'Search' | 'Update'
