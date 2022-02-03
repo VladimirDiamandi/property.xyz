@@ -4,6 +4,7 @@ import FormItem from "./FormItem";
 import CustomSelect, { IOptions } from "../CustomSelect";
 
 import { MainBtn, StyledForm } from "../../styles/Form.styles";
+import { useRouter } from "next/router";
 
 const typeOptions = [
   {
@@ -47,11 +48,12 @@ const badsOptions = [
 ];
 
 interface IFormProps {
-  btnName: string
+  btnName: 'Search' | 'Update'
 }
 
 
 const Form = ({ btnName }: IFormProps) => {
+  const router = useRouter()
   const [postcode, setPostcode] = useState<string>('');
   const [type, setType] = useState<null | IOptions>(null);
   const [beds, setBeds] = useState<null | IOptions>(null);
@@ -63,6 +65,7 @@ const Form = ({ btnName }: IFormProps) => {
       type,
       beds,
     });
+    if (btnName === 'Search') router.push('/result')
     setPostcode("");
     setType(null);
     setBeds(null);

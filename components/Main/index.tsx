@@ -1,20 +1,14 @@
 import React from "react";
-
-import Title from "../Title";
-import Form from "../Form";
-import PoweredBy from "../PoweredBy";
-
 import { StyledMain } from "../../styles/Main.styles";
 import { Container, Background } from "../../styles/Global.styles";
 
-const Main = () => {
+
+const Main = ({ children }: any) => {
   return (
     <Background color="#f3f4fa">
       <Container>
         <StyledMain>
-          <Title />
-          <Form btnName="Search" />
-          <PoweredBy />
+          {children}
         </StyledMain>
       </Container>
     </Background>

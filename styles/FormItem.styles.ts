@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledFormItem = styled.div`
+interface IFormItemProps {
+  divider:boolean
+}
+
+export const StyledFormItem = styled.div<IFormItemProps>`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,7 +46,7 @@ export const StyledFormItem = styled.div`
     content: "";
     display: block;
     position: absolute;
-    background-color: ${({ divider }:any) => (divider ? "#d8d8d8" : "transparent")};
+    background-color: ${({ divider }) => (divider ? "#d8d8d8" : "transparent")};
     right: 0;
     bottom: 0;
     width: 100%;

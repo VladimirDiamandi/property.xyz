@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
-import { EstimateContaierItem, EstimateContainer, EstimateItem } from '../../styles/EstimateMenu.module';
+import { EstimateContaierItem, EstimateContainer, EstimateItem } from '../../styles/EstimateMenu';
 
 const activeItemStyle = {
     borderBottom: `2px solid red`,
     fontWeight: 'bold'
 }
 
+const estimateOptions = [
+    {
+        id: 1,
+        name: 'Property Estimate',
+    },
+    {
+        id: 2,
+        name: 'Rental Estimate'
+    },
+]
 
-export default function EstimateMenu() {
+interface IEstimateMenuProps {
+    index: number,
+    setIndex: (num: number) => void
+}
 
-    const [index, setIndex] = useState<number>(0)
-
-    const estimateOptions = [
-        {
-            id: 1,
-            name: 'Property Estimate',
-        },
-        {
-            id: 2,
-            name: 'Rental Estimate'
-        },
-    ]
+export default function EstimateMenu({ index, setIndex }: IEstimateMenuProps) {
 
     return (
         <EstimateContainer>
@@ -32,4 +34,3 @@ export default function EstimateMenu() {
         </EstimateContainer>
     );
 }
-

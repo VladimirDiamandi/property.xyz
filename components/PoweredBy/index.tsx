@@ -8,7 +8,7 @@ const PoweredBy = () => {
   return (
     <StyledPoweredByElement>
       <span>Powered by</span>
-      <BitmapSVG />
+      <span><BitmapSVG /></span>
     </StyledPoweredByElement>
   );
 };

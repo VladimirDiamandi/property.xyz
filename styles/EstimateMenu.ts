@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const EstimateContainer = styled.div`
-    margin: 40px 0 79px 0;
+   margin-top:40px;
 `
 export const EstimateContaierItem = styled.div`
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #C6C8D3;
     display:flex;
     padding-botton:15px
     
@@ -15,5 +15,6 @@ cursor:pointer;
 position:relative;
 display:block;
 top:1px;
+color:#343434;
 `
 

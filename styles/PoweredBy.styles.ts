@@ -9,6 +9,7 @@ export const StyledPoweredByElement = styled.div`
 
   @media (min-width: 1024px) {
     padding: 40px 0;
+
   }
 
   span {
