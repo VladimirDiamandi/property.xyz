@@ -5,7 +5,7 @@ import EstimatePrice from '../EstimatePrice';
 import PoweredBy from '../PoweredBy';
 
 
-export default function PropertyEstimate() {
+const PropertyEstimate: React.FC = () => {
     return (
         <PropertyEstimateContainer>
             <EstimatePrice price='£200,000 - £230,000k' percentage='81' isStyles />
@@ -21,3 +21,4 @@ export default function PropertyEstimate() {
         </PropertyEstimateContainer>
     );
 }
+export default PropertyEstimate

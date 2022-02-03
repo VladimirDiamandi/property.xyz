@@ -4,7 +4,7 @@ import Link from "next/link";
 import { StyledServiceFeedback } from "../../styles/ServiceFeedback.styles";
 import { Container, Background } from "../../styles/Global.styles";
 
-const ServiceFeedback = () => {
+const ServiceFeedback: React.FC = () => {
   return (
     <Background>
       <Container>

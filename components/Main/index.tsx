@@ -7,7 +7,7 @@ interface IMainProps {
   children: React.ReactNode
 }
 
-const Main = ({ children }: IMainProps) => {
+const Main: React.FC<IMainProps> = ({ children }) => {
   return (
     <Background color="#f3f4fa">
       <Container>

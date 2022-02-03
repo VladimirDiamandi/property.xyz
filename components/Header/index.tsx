@@ -7,7 +7,7 @@ import MainLogoSVG from "./MainLogoSVG";
 import { StyledHeader } from "../../styles/Header.styles";
 import { HeaderContainer, Background } from "../../styles/Global.styles";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <Background color="#2c3142">
       <HeaderContainer>

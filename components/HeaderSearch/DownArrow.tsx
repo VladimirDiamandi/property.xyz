@@ -2,7 +2,7 @@ import React from "react";
 interface IDownArrow {
   color: string
 }
-const DownArrow = ({ color }: IDownArrow) => {
+const DownArrow: React.FC<IDownArrow> = ({ color }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

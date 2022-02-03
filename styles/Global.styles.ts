@@ -66,14 +66,17 @@ margin: 0 auto;
 
 export const ViewportHeightWrapper = styled.div`
 height : auto;
+@media (min-width: 1000px) {
+  height: 100vh
+}
 @media (min-width: 1024) {
   height: 100vh
 }
 @media (min-width: 1280px) {
-  height: auto
+  height: 100vh
 }
 @media (min-width: 1600px) {
-  height: auto
+  height: 100vh
 }
 
 `;

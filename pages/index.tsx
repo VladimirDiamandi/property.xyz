@@ -9,7 +9,7 @@ import Form from '../components/Form';
 import PoweredBy from '../components/PoweredBy';
 
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Header />

@@ -3,7 +3,7 @@ import React from "react";
 import { StyledTitle } from "../../styles/Title.styles";
 
 
-const Title = () => {
+const Title:React.FC = () => {
   return (
     <StyledTitle>
       <h1>

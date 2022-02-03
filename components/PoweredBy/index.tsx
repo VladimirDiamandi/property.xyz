@@ -4,7 +4,7 @@ import BitmapSVG from "./BitmapSVG";
 
 import { StyledPoweredByElement } from "../../styles/PoweredBy.styles";
 
-const PoweredBy = () => {
+const PoweredBy: React.FC = () => {
   return (
     <StyledPoweredByElement>
       <span>Powered by</span>

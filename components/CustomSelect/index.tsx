@@ -23,12 +23,12 @@ interface ICustomeSelectProps {
 
 
 
-const CustomSelect = ({
+const CustomSelect: React.FC<ICustomeSelectProps> = ({
   options,
   defaultValue,
   selectedOption,
   onSelectOption,
-}: ICustomeSelectProps) => {
+}) => {
   const [showOptions, setShowOptions] = useState<boolean>(false);
   return (
     <>

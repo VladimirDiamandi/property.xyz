@@ -9,7 +9,7 @@ interface IImgWithText {
     title: string
 }
 
-export default function ImgWithText({ path, text, btnText, title }: IImgWithText) {
+const ImgWithText: React.FC<IImgWithText> = ({ path, text, btnText, title }) => {
 
     return (
         <ContainerImgWithText>
@@ -26,3 +26,4 @@ export default function ImgWithText({ path, text, btnText, title }: IImgWithText
 }
 
 
+export default ImgWithText

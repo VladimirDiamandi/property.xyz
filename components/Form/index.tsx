@@ -59,7 +59,7 @@ interface IFormProps {
 }
 
 
-const Form = ({ btnName }: IFormProps) => {
+const Form: React.FC<IFormProps> = ({ btnName }) => {
   const router = useRouter()
   const [postcode, setPostcode] = useState<string>('');
   const [type, setType] = useState<null | IOptions>(null);

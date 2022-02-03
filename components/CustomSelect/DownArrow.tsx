@@ -4,7 +4,7 @@ interface IDownArrowProps {
   color: string
 }
 
-const DownArrow = ({ color }: IDownArrowProps) => {
+const DownArrow: React.FC<IDownArrowProps> = ({ color }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -28,7 +28,7 @@ interface IEstimateMenuProps {
     setIndex: (num: number) => void
 }
 
-export default function EstimateMenu({ index, setIndex }: IEstimateMenuProps) {
+const EstimateMenu: React.FC<IEstimateMenuProps> = ({ index, setIndex }) => {
 
     return (
         <EstimateContainer>
@@ -40,3 +40,4 @@ export default function EstimateMenu({ index, setIndex }: IEstimateMenuProps) {
         </EstimateContainer>
     );
 }
+export default EstimateMenu

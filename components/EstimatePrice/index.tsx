@@ -11,7 +11,7 @@ interface IEstimatePrice {
     isStyles?: boolean,
 }
 
-export default function EstimatePrice({ price, percentage, isStyles }: IEstimatePrice) {
+const EstimatePrice: React.FC<IEstimatePrice> = ({ price, percentage, isStyles }) => {
     return (
         isStyles ? <ContainerEstimitePrice remPadding>
             <h1>Estimated Price</h1>
@@ -26,3 +26,4 @@ export default function EstimatePrice({ price, percentage, isStyles }: IEstimate
             </ContainerEstimitePrice>
     )
 }
+export default EstimatePrice

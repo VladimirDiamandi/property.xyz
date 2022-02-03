@@ -30,10 +30,10 @@ padding: 0 80px;
 
 export const ContainerEstimitePrice = styled.div<IContainerEstimitePriceProps>`
 display: flex;
-padding-top: 63px;
-padding-bottom: ${(props) => props.remPadding ? '-63px' : '63px'};
-border-bottom: ${(props) => props.border ? BORDER_BOTTOM  : ''};
-margin-top:${(props) => props.remPadding  ? '-21px' : ''};
+padding-top: 65px;
+padding-bottom: ${(props) => props.remPadding ? '-65px' : '65px'};
+border-bottom: ${(props) => props.border ? BORDER_BOTTOM  : '0'};
+margin-top:${(props) => props.remPadding  ? '-20px' : '0'};
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -81,7 +81,7 @@ font-weight: bold;
 font-size: 25px;
 color: #343434;
 font-weight: bold;
-margin: 30px;
+margin: 30px 0;
 }
 `
 
@@ -92,7 +92,7 @@ div{
   font-size:18px;
   line-height:35px;
   color:#343434;
-  padding-bottom:50px;
+
 }
 `
 

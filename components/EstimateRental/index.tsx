@@ -6,7 +6,7 @@ import PoweredBy from '../PoweredBy';
 
 
 
-export default function RentalEstimate() {
+const RentalEstimate: React.FC = () => {
     return (
         <>
             <EstimatePrice price='£1000pcm' percentage='81' />
@@ -20,3 +20,4 @@ export default function RentalEstimate() {
 
     );
 }
+export default RentalEstimate

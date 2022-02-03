@@ -15,7 +15,7 @@ import ImageBlock from '../components/ImageBlock';
 
 
 
-export default function Result() {
+const Result: React.FC = () => {
     const [index, setIndex] = useState<number>(1)
     return (
         <>
@@ -48,3 +48,4 @@ export default function Result() {
         </ >
     );
 }
+export default Result

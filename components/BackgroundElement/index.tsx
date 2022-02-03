@@ -4,7 +4,7 @@ import AvmGraphicSVG from "./AvmGraphicSVG";
 
 import { StyledBackgroundElement } from "../../styles/BackgroundElement.styles";
 
-const BackgroundElement = () => {
+const BackgroundElement: React.FC = () => {
   return (
     <StyledBackgroundElement>
       <AvmGraphicSVG />

@@ -9,7 +9,7 @@ interface IFormItemProps {
 }
 
 
-const FormItem = ({ label, divider = false, children }: IFormItemProps) => (
+const FormItem: React.FC<IFormItemProps> = ({ label, divider = false, children }) => (
   <StyledFormItem divider={divider}>
     <span>{label}</span>
     {children}

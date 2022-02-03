@@ -167,7 +167,7 @@ const commonLinks: ICommonsLinskParams = {
 };
 
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <StyledMobileFooter>

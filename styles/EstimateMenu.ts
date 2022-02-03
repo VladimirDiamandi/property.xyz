@@ -10,7 +10,7 @@ export const EstimateContaierItem = styled.div`
     
 `
 export const EstimateItem = styled.span`
-padding:0 22px 15px 39px;
+padding:0 20px 15px 40px;
 cursor:pointer;
 position:relative;
 display:block;

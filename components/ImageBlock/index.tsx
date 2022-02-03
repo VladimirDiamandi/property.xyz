@@ -39,7 +39,7 @@ interface IImageItem {
 
 
 
-export default function ImageBlock() {
+const ImageBlock: React.FC = () => {
     return (
         <ImgRow>
             {image.map(elem =>
@@ -54,3 +54,4 @@ export default function ImageBlock() {
         </ImgRow>
     )
 }
+export default ImageBlock

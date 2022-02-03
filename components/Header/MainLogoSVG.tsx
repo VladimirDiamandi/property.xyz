@@ -4,7 +4,7 @@ interface IMainLogoSVG {
   color?: string
 }
 
-const MainLogoSVG = ({ color = "#000000" }: IMainLogoSVG) => {
+const MainLogoSVG: React.FC<IMainLogoSVG> = ({ color = "#000000" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

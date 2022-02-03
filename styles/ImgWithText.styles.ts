@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 export const ContainerImgWithText = styled.div`
 position:relative;
-
-
 `
 
 export const ContentImgWithText = styled.div`
@@ -41,7 +39,14 @@ button{
   cursor: pointer;
 }
 
-
+  @media (max-width: 520px) {
+    p{
+      font-size:13px
+    }
+    span{
+      font-size:20px
+    }
+  }
 
 `
 export const InnerWrapper = styled.div`

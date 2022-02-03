@@ -11,7 +11,7 @@ import {
   StyledSearchGroup,
 } from "../../styles/HeaderSearch.styles";
 
-const HeaderSearch = () => {
+const HeaderSearch: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const [selectValue, setSelectValue] = useState<string>("");
   const [showTrendList, setShowTrendList] = useState<boolean>(false);

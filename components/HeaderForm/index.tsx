@@ -4,7 +4,7 @@ import { StyledMain } from '../../styles/Main.styles';
 import Form from '../Form';
 
 
-export default function HeaderForm() {
+const HeaderForm: React.FC = () => {
     return (
         <>
             <Background color='#ffffff'>
@@ -17,3 +17,4 @@ export default function HeaderForm() {
         </>
     );
 }
+export default HeaderForm
