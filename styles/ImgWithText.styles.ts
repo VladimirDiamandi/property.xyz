@@ -37,6 +37,9 @@ button{
   line-height: 28px;
     border: none;
   cursor: pointer;
+    :hover {
+    background-color: #b92d32;
+  }
 }
 
   @media (max-width: 520px) {
